@@ -7,25 +7,34 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 1.75em;
   background-color: #06A816;
   color: white;
   width: 100%;
-  flex-wrap: wrap; /* allows for top bar to wrap to next line */
-  flex-direction: row;
-  height: 100px;
+  height: 60px;
+  flex-wrap: wrap;
 }
 
 .sub {
-  left: 15;
-  position: absolute; /* pushes the h4 tag to the left */
-  margin-top:10px;
-  
+  position: absolute; /* pushes the slogan tag to the left */  
+  display: flex; /* allows for adjusting to screen size */
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: -20px;
+  width: 80%;
+  height: 1%;
+  font-size: small;
+  margin-bottom: 0px; /* Distance from Title */
 }
 
-header h1 {
-  position: relative;
-  display: flex;
+nav ul {
+  display: flex; /* allows for adjusting to screen size */
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  float: right;
+  font-size: small;
+  margin-bottom: 10px;
+  margin-left: -25px;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -33,22 +42,23 @@ nav a {
   color: #ffffff;
   margin: 20px; /* space between nav links */
   border: 2px solid;
-  border-radius: 5px;
-  width: 250px;
-  text-align:center;
+  border-radius: 10px;
+  border-color:#ffffff;
+  width:200px;
   background-color: #E75D02;
-  font-size:1.5em;
-  display: flex;
+  font-size: 1.5em;
+  display: inline-flex;
   justify-content: center; /* align text inside box center */
+  margin-bottom: 10px;
+  padding: 0 10px;
+
 
 }
 
-ul {
-  list-style: none;
-  float:right;
-  display:flex;
+nav a:hover {
+  background-color: #ffffff;
+  color: #E75D02;
 }
-
 
 /*------------------- Text Size and Font Family ----------------------------*/
 h1, h2 {
@@ -56,31 +66,62 @@ h1, h2 {
 }
 
 h1 {
-  font-size:2.5em;
-  margin: 10px;
-  margin-bottom:150px;
-  margin-top: 0;
-  text-align: center;
+  font-size: 2.5em;
+  text-align: left;
+  text-shadow: 2px 5px 1px rgba(0, 0, 0, 1.5); /*Add shadow effect to the Title */
+  float: left;
+  display: flex;
+  margin-right: 00px;
+  height:150%;
+  width: 100%;
+  margin: -20px;
 }
 
 h2 {
   padding-top: 0;
-  font-size:1.75em;
+  font-size: 1.75em;
   margin: 10px;
-
 }
 
 h3, text {
   font-size: 1.25em;
 }
 
+/* Body CSS */
+.fruit {
+  padding-top: 100px;
 
+}
+
+p {
+  display: grid;
+
+}
 /* -------------------- ROOT VARIABLES --------------------------------------- */
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to the start */
+  }
+  
+  nav {
+    margin-top: 20px; /* Add margin to push nav down */
+  }
 
+  nav ul {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%; /* Full width for smaller screens */
+    margin: 5px 0; /* Adjust margin for smaller screens */
+  }
+}
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
