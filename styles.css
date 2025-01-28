@@ -13,7 +13,7 @@ header {
   width: 100%;
   height: 50px; /*Adjusts the header background */
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: -5px;
 }
 
 .sub {
@@ -67,6 +67,37 @@ nav a:hover {
   color: #E75D02;
 }
 
+/*------------------- Image Layout ----------------------------------------*/
+.img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Allows for 3 images per row */
+  gap: 30px; /* This adds gap between images */
+}
+
+.img figure {
+  margin: 0;
+  position: relative;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+}
+
+.img figcaption {
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  bottom: 10;
+  width: 50%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: white;
+  text-align: center;
+  padding: 1px;
+
+}
+
+
 /*------------------- Text Size and Font Family ----------------------------*/
 h1, h2 {
   font-family: 'Irish Grover', sans-serif;
@@ -99,6 +130,39 @@ p {
   display: grid;
 
 }
+
+/* Body CSS */
+
+.fruits {
+  text-align: center;
+}
+
+/* Footer  */
+footer {
+  background-color:#06A816;
+  color: white;
+  text-align: center;
+}
+
+footer section {
+  display: flex; /* Extends out primary text "Hours" and "Contacts" */
+
+}
+
+footer p {
+  padding-left: 100px;
+  float: right;
+}
+small {
+  background-color: white;
+  color:#06A816;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  padding-left: 100px;
+  text-align: center;
+}
+
 /* -------------------- ROOT VARIABLES --------------------------------------- */
 
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
@@ -107,7 +171,7 @@ p {
 
 
 
-}
+
 /*-------------------- MEDIA QUERY (large) ------------------------------------*/
 
 /*-------------------- MEDIA QUERY (xl) ---------------------------------------*/
