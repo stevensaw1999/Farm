@@ -13,7 +13,6 @@ header {
   width: 100%;
   height: 50px; /*Adjusts the header background */
   flex-wrap: wrap;
-  margin-bottom: -5px;
 }
 
 .sub {
@@ -22,9 +21,9 @@ header {
   grid-template-columns: repeat(3, 1fr);
   margin-left: -20px;
   width: 80%;
-
+  flex-wrap: wrap;
   font-size: small;
-  margin-top: 25px; /* Distance from Title */
+  margin-top: 70px; /* Distance from Title */
 }
 
 nav {
@@ -41,7 +40,7 @@ nav ul {
   padding: 0;
   flex-wrap: wrap;
   align-items: flex-start; /* Align items to the top */
-  margin-top: -25px;
+  margin-top: -5px;
   margin-bottom: 10px;
 }
 
@@ -59,6 +58,7 @@ nav a {
   justify-content: center; /* Align text inside box center */
   padding: 0 50px;
   margin-bottom: 0px;
+
 
 }
 
@@ -137,7 +137,22 @@ p {
   text-align: center;
 }
 
+p {
+  margin: 10px;
+}
+
 /* Footer  */
+
+.primary-text {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 200px;
+  background-color: #06A816;
+  color: white;
+  text-align: center;
+  padding-left: 75px;
+}
+
 footer {
   background-color:#06A816;
   color: white;
@@ -146,13 +161,15 @@ footer {
 
 footer section {
   display: flex; /* Extends out primary text "Hours" and "Contacts" */
-
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 footer p {
-  padding-left: 100px;
   float: right;
+  padding-right: 10px;
 }
+
 small {
   background-color: white;
   color:#06A816;
