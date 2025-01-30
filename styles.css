@@ -104,10 +104,10 @@ h1, h2 {
 h1 {
   font-size: 2.5em;
   text-align: left;
-  text-shadow: 2px 5px 1px rgba(0, 0, 0, 1.5); /*Add shadow effect to the Title */
+  text-shadow: 2px 5px 1px rgba(0, 0, 0, 1.5); /* Add shadow effect to the Title */
   float: left;
   display: flex;
-  height:150%;
+  height: 150%;
   width: 100%;
   margin: -20px;
 }
@@ -126,17 +126,11 @@ h3, text {
 
 p {
   display: grid;
-
+  margin: 10px;
 }
-
-/* Body CSS */
 
 .fruits {
   text-align: center;
-}
-
-p {
-  margin: 10px;
 }
 
 /* Footer  */
@@ -152,7 +146,7 @@ p {
 }
 
 footer {
-  background-color:#06A816;
+  background-color: #06A816;
   color: white;
   text-align: center;
 }
@@ -170,7 +164,7 @@ footer p {
 
 small {
   background-color: white;
-  color:#06A816;
+  color: #06A816;
   display: block;
   padding: 10px;
   width: 100%;
@@ -199,7 +193,6 @@ small {
   nav ul {
     grid-template-rows: 1fr;
     position: absolute;
-    float: 
   }
 }
 
