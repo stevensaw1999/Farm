@@ -10,7 +10,7 @@ header {
   padding: 50px;
   background-color: #06A816;
   color: white;
-  width: 100%;
+  width: 95%;
   height: 50px; /*Adjusts the header background */
   flex-wrap: wrap;
 }
@@ -29,7 +29,7 @@ header {
 nav {
   display: flex;
   justify-content: flex-end; /* Move nav list to the right */
-  width: 100%;
+  width: 80%;
 }
 
 nav ul {
@@ -58,8 +58,6 @@ nav a {
   justify-content: center; /* Align text inside box center */
   padding: 0 50px;
   margin-bottom: 0px;
-
-
 }
 
 nav a:hover {
@@ -185,7 +183,25 @@ small {
 /* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
 
 /*-------------------- MEDIA QUERY (medium) --------------------------------*/
+@media screen and (min-width: 1100px) {
 
+  .img {
+    grid-template-columns: repeat(3, 1fr); /* Allows for 3 images per row */
+    display:grid;
+  }
+
+  .footer {
+    grid-column: 3/4;
+  }
+}
+
+@media screen and (min-width: 836px) {
+  nav ul {
+    grid-template-rows: 1fr;
+    position: absolute;
+    float: 
+  }
+}
 
 
 
